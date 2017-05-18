@@ -10,6 +10,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Collections;
 
 /**
  * Created by LaunchCode
@@ -42,7 +43,7 @@ public class JobData {
                 values.add(aValue);
             }
         }
-
+        Collections.sort(values);
         return values;
     }
 
@@ -82,7 +83,7 @@ public class JobData {
         }
 
         if (jobs.isEmpty()) {
-            System.out.println("Your search did not return any results.");
+            System.out.println("No results.");
         }
 
         return jobs;
@@ -105,7 +106,7 @@ public class JobData {
         }
 
         if (jobs.isEmpty()) {
-            System.out.println("Your search did not return any results.");
+            System.out.println("No results.");
         }
 
         return jobs;
